@@ -1,0 +1,91 @@
+# depslib dependency file v1.0
+1554379268 source:c:\users\Дом\downloads\chess\main.cpp
+	<iostream>
+	<map>
+	"src/SpritesLoader.hpp"
+	"src/Behavior.hpp"
+
+1554379268 c:\users\Дом\downloads\chess\src\spritesloader.hpp
+	"BaseTypes.hpp"
+	<string>
+	<map>
+
+1554379268 c:\users\Дом\downloads\chess\src\basetypes.hpp
+	<SFML/Graphics.hpp>
+
+1554379268 c:\users\Дом\downloads\chess\src\behavior.hpp
+	"Board.hpp"
+
+1554636829 c:\users\Дом\downloads\chess\src\board.hpp
+	"Figure.hpp"
+	<vector>
+	<map>
+	<math.h>
+
+1554379268 c:\users\Дом\downloads\chess\src\figure.hpp
+	"BaseTypes.hpp"
+
+1554640724 source:c:\users\Дом\downloads\chess\src\behavior.cpp
+	"Behavior.hpp"
+
+1554379268 source:c:\users\Дом\downloads\chess\src\board.cpp
+	"Board.hpp"
+	<map>
+	<vector>
+	<iostream>
+
+1554379268 source:c:\users\Дом\downloads\chess\src\figure.cpp
+	"Figure.hpp"
+
+1554379268 source:c:\users\Дом\downloads\chess\src\mysprite.cpp
+	"BaseTypes.hpp"
+
+1554379268 source:c:\users\Дом\downloads\chess\src\spritesloader.cpp
+	"SpritesLoader.hpp"
+	<iostream>
+
+1555440537 source:c:\users\Дом\desktop\chess\main.cpp
+	<iostream>
+	<map>
+	"src/SpritesLoader.hpp"
+	"src/Behavior.hpp"
+
+1554379268 c:\users\Дом\desktop\chess\src\spritesloader.hpp
+	"BaseTypes.hpp"
+	<string>
+	<map>
+
+1554379268 c:\users\Дом\desktop\chess\src\basetypes.hpp
+	<SFML/Graphics.hpp>
+
+1555440440 c:\users\Дом\desktop\chess\src\behavior.hpp
+	"Board.hpp"
+
+1554636829 c:\users\Дом\desktop\chess\src\board.hpp
+	"Figure.hpp"
+	<vector>
+	<map>
+	<math.h>
+
+1554379268 c:\users\Дом\desktop\chess\src\figure.hpp
+	"BaseTypes.hpp"
+
+1554379268 source:c:\users\Дом\desktop\chess\src\board.cpp
+	"Board.hpp"
+	<map>
+	<vector>
+	<iostream>
+
+1554379268 source:c:\users\Дом\desktop\chess\src\figure.cpp
+	"Figure.hpp"
+
+1554379268 source:c:\users\Дом\desktop\chess\src\mysprite.cpp
+	"BaseTypes.hpp"
+
+1554379268 source:c:\users\Дом\desktop\chess\src\spritesloader.cpp
+	"SpritesLoader.hpp"
+	<iostream>
+
+1555445842 source:c:\users\Дом\desktop\chess\src\behavior.cpp
+	"Behavior.hpp"
+
