@@ -13,7 +13,7 @@ using namespace sf;
 const int board_size = 800;
 const int x_0 = 30, y_0 = 30;
 
-
+const bool DEBUG = true;
 
 
 
@@ -44,16 +44,44 @@ int main(int argc, char const *argv[])
 		Vector2f pos = window.mapPixelToCoords(pixelPos);
 
 		sf::Event event;
+
+		map<FigureType, string> _m = {{ROOK, "ROOK"},
+									  {KNIGHT, "KNIGHT"},
+									  {BISHOP,"BISHOP"},
+									  {KING, "KING"},
+									  {QUEEN, "QUEEN"},
+									  {EMPTY, "EMPTY"},
+									  {PAWN, "PAWN"}};
+
         while (window.pollEvent(event))
         {
             if (event.type == Event::Closed)
                 window.close();
 
+            int countOfKings = 0;
+            for(int i = 0; i < 8; ++i)
+            {
+            	for(int j = 0; j < 8; ++j)
+            	{
+            		if (brd.m_board[j][i].getType() == KING)
+            		{
+            			countOfKings ++;
+            		}
+            	}
+            }
+
+            if(countOfKings != 2)
+            {
+            	cout << "Loose!" << endl;
+            	return 0;
+            }
+
             if (sf::Mouse::isButtonPressed(sf::Mouse::Left) &&
             	s.getGlobalBounds().contains(pos.x, pos.y) &&
             	((pos.x - 35) >=0 && (pos.y - 35) >= 0))
             {
-            	//cout << (int(pos.x - 35) / 90) << " " << (int(pos.y - 35) / 90) << endl;
+
+            	//cout << "is pressed = " << " " << isPressed << endl;
             	if(!isPressed)
             	{
             		isPressed = true;
@@ -99,6 +127,17 @@ int main(int argc, char const *argv[])
             				isPressed = true;
             			}
             		}
+            	}
+
+            	if(DEBUG)
+            	{
+            		cout << "------------------" << endl;
+            		int x, y;
+            		if(isPressed) x = x_start, y = y_start; else x = x_end, y = y_end;
+            		cout << "pressed : " << " " << x << " " << y << endl;
+
+            		cout << "figure  : " << _m[brd.m_board[y][x].getType()] << endl;
+            		cout << "player : " << brd.m_board[y][x].getPlayer() << endl;
             	}
             }
 
