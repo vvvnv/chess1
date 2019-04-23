@@ -44,7 +44,7 @@
 	"SpritesLoader.hpp"
 	<iostream>
 
-1555440537 source:c:\users\Дом\desktop\chess\main.cpp
+1556042432 source:c:\users\Дом\desktop\chess\main.cpp
 	<iostream>
 	<map>
 	"src/SpritesLoader.hpp"
@@ -70,7 +70,7 @@
 1554379268 c:\users\Дом\desktop\chess\src\figure.hpp
 	"BaseTypes.hpp"
 
-1554379268 source:c:\users\Дом\desktop\chess\src\board.cpp
+1555521063 source:c:\users\Дом\desktop\chess\src\board.cpp
 	"Board.hpp"
 	<map>
 	<vector>
@@ -86,6 +86,7 @@
 	"SpritesLoader.hpp"
 	<iostream>
 
-1555445842 source:c:\users\Дом\desktop\chess\src\behavior.cpp
+1556042294 source:c:\users\Дом\desktop\chess\src\behavior.cpp
 	"Behavior.hpp"
+	<iostream>
 

@@ -5,9 +5,9 @@
 
 namespace  ChessCore
 {
-	
+
 	Board::Board(std::map<FigureType, std::map<PlayerType, MySprite> > t_sprites)
-	{	
+	{
 
 		std::vector<PlayerType> player {Player_1, Player_2, None_player};
 		std::vector< std::vector<Figure> >_backLine(2);
@@ -16,8 +16,8 @@ namespace  ChessCore
 		for(int player_num = 0; player_num < 2; ++player_num)
 		{
 
-			std::vector<FigureType> figs {ROOK, KNIGHT, BISHOP, KING, QUEEN, BISHOP, KNIGHT, ROOK};
-			for (int i = 0; i < figs.size(); ++i) 
+			std::vector<FigureType> figs {ROOK, KNIGHT, BISHOP, QUEEN, KING, BISHOP, KNIGHT, ROOK};
+			for (int i = 0; i < figs.size(); ++i)
 			{
 				FigureCoordinates crd;
 				if(player[player_num] == Player_1)
@@ -86,7 +86,7 @@ namespace  ChessCore
 			for(int j = 0; j < 8; ++j)
 			{
 				FigureCoordinates crd = m_board[i][j].getCoords();
-				std::cout << "(" << crd.x << " " << crd.y << ")\t"; 
+				std::cout << "(" << crd.x << " " << crd.y << ")\t";
 			}
 			std::cout << std::endl;
 		}
