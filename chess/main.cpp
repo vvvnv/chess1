@@ -35,7 +35,6 @@ int main(int argc, char const *argv[])
 
 	vector<PlayerType> players {Player_1, Player_2};
 	int player_iter = 0;
-
 	while (window.isOpen())
 	{
 
@@ -80,12 +79,10 @@ int main(int argc, char const *argv[])
             	s.getGlobalBounds().contains(pos.x, pos.y) &&
             	((pos.x - 35) >=0 && (pos.y - 35) >= 0))
             {
-
             	//cout << "is pressed = " << " " << isPressed << endl;
             	if(!isPressed)
             	{
             		isPressed = true;
-
             		x_start = (int(pos.x - 35) / 90);
             		y_start = (int(pos.y - 35) / 90);
             		if((brd.m_board[y_start][x_start].getType() == EMPTY) ||
@@ -101,8 +98,12 @@ int main(int argc, char const *argv[])
             		player_iter = (player_iter + 1) % 2;
             		x_end = (int(pos.x - 35) / 90);
             		y_end = (int(pos.y - 35) / 90);
-
-            		if(brd.m_board[y_end][x_end].getType() == EMPTY)
+					if (x_end==x_start && y_end==y_start) {
+						//cout<<"here"<<endl;
+						isPressed=false;
+						player_iter=(player_iter+1)%2;
+					} else {
+					    if(brd.m_board[y_end][x_end].getType() == EMPTY)
             		{
 	            		if(Behavior::check(brd.m_board[y_start][x_start], brd.m_board[y_end][x_end], brd))
 
@@ -127,6 +128,8 @@ int main(int argc, char const *argv[])
             				isPressed = true;
             			}
             		}
+					}
+
             	}
 
             	if(DEBUG)

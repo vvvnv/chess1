@@ -2,10 +2,10 @@
 
 namespace  ChessCore
 {
-	
-	class Figure
+
+	class Figure : public Object
 	{
-		
+
 	public:
 		Figure(const FigureCoordinates &t_coords,
 			   const MySprite &t_sprite,
@@ -23,12 +23,14 @@ namespace  ChessCore
 		FigureType getType() const;
 
 		PlayerType getPlayer() const;
-		
+
 		MySprite m_sprite;
 
 		void setType(FigureType t);
 
-		void setPlayer(PlayerType p); 
+		void setPlayer(PlayerType p);
+
+		void debugInfo();
 
 		~Figure();
 
@@ -37,7 +39,7 @@ namespace  ChessCore
 		FigureType m_type;
 		PlayerType m_player;
 		FigureCoordinates m_field_coords;
-		
+
 	};
 
 }
