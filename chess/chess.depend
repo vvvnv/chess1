@@ -44,7 +44,7 @@
 	"SpritesLoader.hpp"
 	<iostream>
 
-1556042432 source:c:\users\Дом\desktop\chess\main.cpp
+1557867356 source:c:\users\Дом\desktop\chess\main.cpp
 	<iostream>
 	<map>
 	"src/SpritesLoader.hpp"
@@ -55,8 +55,8 @@
 	<string>
 	<map>
 
-1554379268 c:\users\Дом\desktop\chess\src\basetypes.hpp
-	<SFML/Graphics.hpp>
+1557690923 c:\users\Дом\desktop\chess\src\basetypes.hpp
+	"MySprite.hpp"
 
 1555440440 c:\users\Дом\desktop\chess\src\behavior.hpp
 	"Board.hpp"
@@ -67,7 +67,7 @@
 	<map>
 	<math.h>
 
-1554379268 c:\users\Дом\desktop\chess\src\figure.hpp
+1557690992 c:\users\Дом\desktop\chess\src\figure.hpp
 	"BaseTypes.hpp"
 
 1555521063 source:c:\users\Дом\desktop\chess\src\board.cpp
@@ -76,17 +76,89 @@
 	<vector>
 	<iostream>
 
-1554379268 source:c:\users\Дом\desktop\chess\src\figure.cpp
+1557690967 source:c:\users\Дом\desktop\chess\src\figure.cpp
 	"Figure.hpp"
+	<iostream>
+	<map>
 
-1554379268 source:c:\users\Дом\desktop\chess\src\mysprite.cpp
+1557691014 source:c:\users\Дом\desktop\chess\src\mysprite.cpp
 	"BaseTypes.hpp"
+	<iostream>
 
 1554379268 source:c:\users\Дом\desktop\chess\src\spritesloader.cpp
 	"SpritesLoader.hpp"
 	<iostream>
 
-1556042294 source:c:\users\Дом\desktop\chess\src\behavior.cpp
+1557690943 source:c:\users\Дом\desktop\chess\src\behavior.cpp
 	"Behavior.hpp"
+	<iostream>
+
+1557687644 c:\users\Дом\desktop\chess\src\mysprite.hpp
+	<SFML/Graphics.hpp>
+	"Object.hpp"
+
+1557687686 c:\users\Дом\desktop\chess\src\object.hpp
+
+1557687724 source:c:\users\Дом\desktop\chess\src\object.cpp
+	"Object.hpp"
+	<iostream>
+
+1557867356 source:c:\users\Дом\desktop\Код\chess\main.cpp
+	<iostream>
+	<map>
+	"src/SpritesLoader.hpp"
+	"src/Behavior.hpp"
+
+1554379268 c:\users\Дом\desktop\Код\chess\src\spritesloader.hpp
+	"BaseTypes.hpp"
+	<string>
+	<map>
+
+1557690923 c:\users\Дом\desktop\Код\chess\src\basetypes.hpp
+	"MySprite.hpp"
+
+1557687644 c:\users\Дом\desktop\Код\chess\src\mysprite.hpp
+	<SFML/Graphics.hpp>
+	"Object.hpp"
+
+1557687686 c:\users\Дом\desktop\Код\chess\src\object.hpp
+
+1555440440 c:\users\Дом\desktop\Код\chess\src\behavior.hpp
+	"Board.hpp"
+
+1554636829 c:\users\Дом\desktop\Код\chess\src\board.hpp
+	"Figure.hpp"
+	<vector>
+	<map>
+	<math.h>
+
+1557690992 c:\users\Дом\desktop\Код\chess\src\figure.hpp
+	"BaseTypes.hpp"
+
+1557907129 source:c:\users\Дом\desktop\Код\chess\src\behavior.cpp
+	"Behavior.hpp"
+	<iostream>
+
+1555521063 source:c:\users\Дом\desktop\Код\chess\src\board.cpp
+	"Board.hpp"
+	<map>
+	<vector>
+	<iostream>
+
+1557690967 source:c:\users\Дом\desktop\Код\chess\src\figure.cpp
+	"Figure.hpp"
+	<iostream>
+	<map>
+
+1557691014 source:c:\users\Дом\desktop\Код\chess\src\mysprite.cpp
+	"BaseTypes.hpp"
+	<iostream>
+
+1557687724 source:c:\users\Дом\desktop\Код\chess\src\object.cpp
+	"Object.hpp"
+	<iostream>
+
+1554379268 source:c:\users\Дом\desktop\Код\chess\src\spritesloader.cpp
+	"SpritesLoader.hpp"
 	<iostream>
 

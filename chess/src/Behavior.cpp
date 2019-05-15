@@ -65,7 +65,6 @@ namespace ChessCore
 					for (int i = mini; i< maxi; i++){
 						if(brd.m_board[crd_a.y][i].getType() != EMPTY) {flag = false;}
 					}
-					flag = true;
 				}
 				else {
 					if(crd_a.y < crd_b.y) {
@@ -79,7 +78,6 @@ namespace ChessCore
 					for (int i = mini; i< maxi; i++){
 						if(brd.m_board[i][crd_a.x].getType() != EMPTY) {flag = false;}
 					}
-					flag = true;
 				}
 			}
 			else {

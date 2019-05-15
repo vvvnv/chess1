@@ -85,6 +85,7 @@ int main(int argc, char const *argv[])
             		isPressed = true;
             		x_start = (int(pos.x - 35) / 90);
             		y_start = (int(pos.y - 35) / 90);
+            		brd.m_board[y_start][x_start].m_sprite.m_sprite.setColor(Color::Green);
             		if((brd.m_board[y_start][x_start].getType() == EMPTY) ||
             			(brd.m_board[y_start][x_start].getPlayer() != players[player_iter]))
             		{
@@ -98,13 +99,17 @@ int main(int argc, char const *argv[])
             		player_iter = (player_iter + 1) % 2;
             		x_end = (int(pos.x - 35) / 90);
             		y_end = (int(pos.y - 35) / 90);
+
 					if (x_end==x_start && y_end==y_start) {
 						//cout<<"here"<<endl;
+						brd.m_board[y_end][x_end].m_sprite.m_sprite.setColor(Color::White);
 						isPressed=false;
 						player_iter=(player_iter+1)%2;
-					} else {
+					}
+					else {
+						brd.m_board[y_start][x_start].m_sprite.m_sprite.setColor(Color::White);
 					    if(brd.m_board[y_end][x_end].getType() == EMPTY)
-            		{
+            			{
 	            		if(Behavior::check(brd.m_board[y_start][x_start], brd.m_board[y_end][x_end], brd))
 
 	            		{
